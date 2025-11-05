@@ -1,0 +1,152 @@
+/* 🌈 Estilos generales */
+body {
+  background-color: #0a0a0a;
+  color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ✨ Franja superior neón */
+.neon-bar {
+  position: relative;
+  background: linear-gradient(90deg, #ff0080, #00ffff, #ff8c00);
+  padding: 8px 0;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.6);
+  overflow: hidden;
+}
+
+/* Efecto brillante que se mueve */
+.neon-bar .shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  animation: shineMove 3s linear infinite;
+}
+
+@keyframes shineMove {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}
+
+/* Contenido de la franja */
+.neon-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* 💖 Texto neón */
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 5px #ff0080,
+    0 0 10px #ff0080,
+    0 0 20px #ff0080,
+    0 0 40px #ff0080;
+  transition: 0.3s;
+}
+
+.neon-text:hover {
+  color: #00ffff;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+}
+
+/* 💡 Botón con toque neón */
+.btn-outline-light.neon-text:hover {
+  background-color: #ff0080;
+  color: #fff;
+  box-shadow: 0 0 10px #ff0080, 0 0 30px #ff0080;
+  border-color: #ff0080;
+}
+
+/* 💥 Badge neón */
+.neon-badge {
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Imagen principal */
+img {
+  border: 2px solid #ff0080;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+
+/* ✨ Tarjetas de productos */
+.neon-card {
+  background-color: #111;
+  border: 2px solid #ff0080;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.neon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
+}
+
+.neon-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* ✨ Botón neón */
+.neon-btn {
+  text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080;
+  border-color: #ff0080;
+}
+
+.neon-btn:hover {
+  background-color: #ff0080;
+  color: #fff;
+  box-shadow: 0 0 15px #ff0080, 0 0 30px #ff0080;
+}
+/* 🌈 Formulario neón */
+.neon-form {
+  background-color: #111;
+  border: 2px solid #ff0080;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+  max-width: 600px;
+}
+
+/* Campos */
+.neon-form .form-control {
+  background-color: #000;
+  border: 1px solid #ff0080;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+  transition: all 0.3s ease;
+}
+
+.neon-form .form-control:focus {
+  background-color: #000;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  color: #fff;
+}
+
+/* Labels */
+.neon-form .form-label {
+  font-weight: 600;
+}
+
+/* Botón ya tiene los estilos .neon-btn */
+/* Footer */
+footer {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
